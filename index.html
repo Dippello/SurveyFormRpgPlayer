@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery Form: RPG Player?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="rectangle"></div>
+    <h1 id="title">Survey: RPG Player?</h1>
+    <p id="description"> "A long time ago a wizard told me: You need to answer any survey you found in your path!" - Blorc, The Orc. </p>
+    <form id="survey-form" method="post">
+      
+      <!-- Nome, email, number -->
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label" for="number">Age (optional): <input id="number" type="number" placeholder="Enter your age" min="13" max="120"/></label>
+        
+      </fieldset>
+        
+      <fieldset>
+        <legend>Where do you play?</legend>
+        <select id="dropdown"> 
+          <option>Online</option>
+          <option>In person</option>
+        </select>
+      </fieldset>
+         
+      <fieldset>
+        <legend>Type of player:</legend>
+         <label for="roleplayer-label"><input id="roleplayer" type="radio" name="player-type" class="inline" checked/> Roleplayer</label>
+         <label for="rulerplayer-label"><input id="rulerplayer" type="radio" name="player-type" class="inline"/> Rulerplayer</label>
+      </fieldset>
+        
+      <fieldset> 
+        <legend>Which RPG's systems you already played? (check all that you played)</legend>
+          <label for="checkbox-label"><input value="1" type="checkbox" name="D&D" class="inline"/>Dungeons & Dragons</label>
+        <label for="checkbox-label"><input value="2" type="checkbox" name="Call of Cthulhu" class="inline"/>Call of Cthulhu</label>
+        <label for="checkbox-label"><input value="3" type="checkbox" name="Vampire: The Masquerade" class="inline"/>Vampire: The Masquerade</label>
+        <label for="checkbox-label"><input value="4" type="checkbox" name="Pathfinder" class="inline"/>Pathfinder</label>
+        <label for="checkbox-label"><input value="5" type="checkbox" name="Cyberpunk" class="inline"/>Cyberpunk</label>
+        <label for="checkbox-label"><input value="6" type="checkbox" name="Ordem Paranormal" class="inline"/>Ordem Paranormal</label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="textarea-label">Comments or suggestions:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments and suggestions here. . ."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
