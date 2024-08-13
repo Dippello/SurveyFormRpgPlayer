@@ -1,18 +1,4 @@
 /* Right now I don't know hoy to proceed stylishing this website */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -2;
-  background: var(--color-darkblue);
-  background-image: url(https://i.pinimg.com/564x/6f/ed/8a/6fed8a8f79ce9d24e44e04f54b76b281.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 body{
   font-family: 'Sans-serif';
